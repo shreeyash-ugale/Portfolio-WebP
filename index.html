@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreeyash Ugale - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #444;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            margin-bottom: 10px;
+        }
+        
+        .links a {
+            margin: 0 10px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        section {
+            margin-bottom: 25px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        
+        h2:after {
+            content: " ▼";
+            font-size: 14px;
+            color: #777;
+        }
+        
+        h2.collapsed:after {
+            content: " ►";
+        }
+        
+        .section-content {
+            transition: max-height 0.3s ease;
+            overflow: hidden;
+            max-height: 2000px;
+        }
+        
+        .collapsed + .section-content {
+            max-height: 0;
+        }
+        
+        .education, .experience, .activities, .projects, .certificates {
+            margin-bottom: 20px;
+        }
+        
+        .institution, .role {
+            font-weight: bold;
+        }
+        
+        .date-location {
+            font-style: italic;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .skill-category h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        #theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 8px 12px;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        body.dark-mode {
+            background-color: #222;
+            color: #eee;
+        }
+        
+        body.dark-mode header {
+            border-bottom: 2px solid #555;
+        }
+        
+        body.dark-mode h2 {
+            border-bottom: 1px solid #444;
+        }
+        
+        body.dark-mode .links a {
+            color: #66b0ff;
+        }
+        
+        body.dark-mode .date-location {
+            color: #aaa;
+        }
+        
+        body.dark-mode #theme-toggle {
+            background: #444;
+            color: #fff;
+            border: 1px solid #555;
+        }
+        
+        @media (max-width: 600px) {
+            .skills {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    
+    <header>
+        <h1>Shreeyash Santosh Ugale</h1>
+        <div class="contact-info">
+            <span>📧 shreeyash.santosh2023@vitstudent.ac.in</span> | 
+            <span>📱 7020087131</span> | 
+            <span>📍 Pune</span>
+        </div>
+        <div class="links">
+            <a href="https://github.com/shreeyash-ugale" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/shreeyash-ugale" target="_blank">LinkedIn</a> |
+            <span>HTB: shree23 (0C6A83510C)</span>
+        </div>
+    </header>
+    
+    <section>
+        <h2>Education</h2>
+        <div class="section-content">
+            <div class="institution">B.Tech. Computer Science and Engineering (Internet of Things)</div>
+            <div>Vellore Institute of Technology, Vellore</div>
+            <div class="date-location">Aug 2023 – Jul 2027 | CGPA - 9.03</div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Professional Experience</h2>
+        <div class="section-content">
+            <div class="role">Backend Intern, Interact</div>
+            <div class="date-location">Aug 2024 – Nov 2024</div>
+            <ul>
+                <li>Developed data logging functionality in Go.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Co-curricular Activities</h2>
+        <div class="section-content">
+            <div class="activity">
+                <div class="role">Computer Society of India-VIT Chapter, Junior Core</div>
+                <div class="date-location">Apr 2024 – present</div>
+                <ul>
+                    <li>Contributed to the development of the authentication system for the Riddler Event website using ExpressJS</li>
+                    <li>Deployed and maintained the organization's internal project management software on DigitalOcean with Docker, utilizing Prometheus and Grafana for monitoring and performance.</li>
+                    <li>Set up a CI/CD pipeline using GitHub Actions during Gravitas (VIT Techfest).</li>
+                    <li>Deployed the LaserTag Event website as a slot booking system.</li>
+                    <li>Designed and developed a stealth chat application for secure messaging, utilizing ICMP for data transmission and encryption to enhance communication privacy.</li>
+                    <li>Organizer and Panelist at Yantra Hack 2024</li>
+                </ul>
+            </div>
+            
+            <div class="activity">
+                <div class="role">CodeChef-VIT Chapter, Junior Core</div>
+                <div class="date-location">Mar 2024 – Jun 2024</div>
+                <ul>
+                    <li>Organized CookOff 8.0 Hackathon</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Skills</h2>
+        <div class="section-content">
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>HackTheBox</h3>
+                    <p>Penetration Tester Path - Top 5% in Academy (Started May 2024, Expected to Complete by Feb 2025)</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <p>Java, Python, C/C++, Golang, Bash, JavaScript, HTML</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <p>ExpressJS, Gorilla Mux, Go Fiber, FastAPI</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Network Penetration Testing Tools</h3>
+                    <p>Nmap, Metasploit, Netcat, Wireshark, Hydra</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Web App Penetration Testing Tools</h3>
+                    <p>Gobuster, Burpsuite, Nikto, Sqlmap</p>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Other Technologies</h3>
+                    <p>Git, Docker, Github Actions, VMware Workstation, Raspberry Pi 3B+, Prometheus, Grafana, Digital Ocean, AWS fundamentals</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Independent Projects</h2>
+        <div class="section-content">
+            <div class="project">
+                <div class="role">Home Automation, Raspberry Pi 3B+, IFTTT, Blynk, Google Assistance</div>
+                <div class="date-location">May 2020</div>
+                <ul>
+                    <li>Developed a smart home lighting control system that allows users to manage household lights via a mobile app and Google Assistant voice commands.</li>
+                    <li>Utilized Blynk for mobile app-based control and IFTTT Webhooks to integrate voice activation with Google Assistant</li>
+                    <li>Integrated a PIR sensor to detect movement and notify users of any presence.</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <div class="role">Flashcard Application for JEE Preparation, Python</div>
+                <div class="date-location">Jun 2021</div>
+                <ul>
+                    <li>Created a flashcard-based study tool for JEE aspirants to learn physics and math formulae, featuring randomized formula display from Resonance's formula book.</li>
+                    <li>Configured nomacs - Image Lounge for flashcard viewing, alternating between hidden and revealed formula tabs to reinforce memorization.</li>
+                    <li>Developed persistent session tracking, ensuring each formula is only shown once per session, with options to reset via reset.py or manual file editing.</li>
+                    <li>Random display of questions across different chapters withing a same subject to simulate exam-like experience.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <h2>Certificates</h2>
+        <div class="section-content">
+            <ul>
+                <li>Career Essentials in Cybersecurity by Microsoft and LinkedIn</li>
+                <li>Career Essentials in System Administration by Microsoft and LinkedIn</li>
+                <li>Cybersecurity Attack and Defense Fundamentals by EC Council
+                    <ul>
+                        <li>Ethical Hacking Essentials (EHE)</li>
+                        <li>Network Defense Essentials (NDE)</li>
+                        <li>Digital Forensics Essentials (DFE)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer style="text-align: center; margin-top: 30px; padding: 10px; border-top: 1px solid #ccc; color: #666;">
+        <p>Last Updated: <span id="last-updated">February 2025</span></p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggle.textContent = 'Toggle Light Mode';
+            } else {
+                themeToggle.textContent = 'Toggle Dark Mode';
+            }
+        });
+        
+        const sectionHeadings = document.querySelectorAll('h2');
+        sectionHeadings.forEach(heading => {
+            heading.addEventListener('click', function() {
+                this.classList.toggle('collapsed');
+            });
+        });
+        
+        const currentYear = new Date().getFullYear();
+        const currentMonth = new Date().toLocaleString('default', { month: 'long' });
+        document.getElementById('last-updated').textContent = `${currentMonth} ${currentYear}`;
+    </script>
+</body>
+</html>
